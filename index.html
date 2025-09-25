@@ -423,43 +423,55 @@
                 height: 120px;
             }
         }
-        @media (max-width: 575px) {
-            .hero {
-                padding: 120px 15px 80px;
-            }
-            .hero h1 {
-                font-size: 2rem;
-            }
-            .hero p {
-                font-size: 1rem;
-            }
-            .section-title {
-                font-size: 1.8rem;
-            }
-            .btn {
-                padding: 10px 20px;
-                font-size: 0.9rem;
-            }
-            .testimonials-section {
-                padding: 3rem 1rem;
-            }
-            .testimonial-card {
-                margin-bottom: 1.5rem;
-            }
-            #contact {
-                padding: 3rem 1rem;
-            }
-            #contact .form-control {
-                padding: 12px 20px;
-            }
-            .about-section {
-                padding: 3rem 1rem;
-                margin-bottom: 1rem;
-            }
-            .benefit-card {
-                margin-bottom: 1.5rem;
-            }
-        }
+     @media (max-width: 575px) {
+    .hero {
+        padding: 120px 15px 80px;
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    /* Add the new code for the CTA buttons here */
+    .hero .btn {
+        display: block; 
+        width: 100%;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        margin-bottom: 10px;
+    }
+
+    /* Existing .btn rule is fine, but you can also combine them */
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .testimonials-section {
+        padding: 3rem 1rem;
+    }
+    .testimonial-card {
+        margin-bottom: 1.5rem;
+    }
+    #contact {
+        padding: 3rem 1rem;
+    }
+    #contact .form-control {
+        padding: 12px 20px;
+    }
+    .about-section {
+        padding: 3rem 1rem;
+        margin-bottom: 1rem;
+    }
+    .benefit-card {
+        margin-bottom: 1.5rem;
+    }
+}
     </style>
 </head>
 <body>
