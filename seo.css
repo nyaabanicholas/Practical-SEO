@@ -1,0 +1,441 @@
+
+        :root {
+            --primary-color: #6a05ad;  /* Deep Purple */
+            --secondary-color: #4a00e5; /* Electric Violet */
+            --accent-color: #ffc425;  /* Vibrant Yellow */
+            --light-bg: #f5f0ff;
+            --dark-bg: #1c0032;
+            --text-color: #333;
+            --light-text: #f0e6ff;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-color);
+            background: var(--light-bg);
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            position: relative;
+            margin-bottom: 3rem;
+            font-weight: 800;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: var(--accent-color);
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(106, 5, 173, 0.8), rgba(74, 0, 229, 0.8)), 
+            url('woman.webp') no-repeat center center/cover;
+
+            color: #fff;
+            text-align: center;
+            padding: 180px 20px 120px;
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: #fff;
+            text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+            font-weight: 500;
+        }
+
+        .btn-accent {
+            background-color: var(--accent-color);
+            color: var(--primary-color);
+            border: none;
+            font-weight: 700;
+            padding: 12px 30px;
+            border-radius: 50px;
+            transition: transform 0.3s ease;
+        }
+
+        .btn-accent:hover {
+            background-color: #ffd766;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        /* Problem/Solution Section */
+        .problem-solution-section {
+            background-color: #fff;
+            padding: 5rem 0;
+        }
+
+        .flex-column {
+            background: #fdfcff;
+            border: 1px solid #e0d3ff;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .flex-column:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 50px rgba(0,0,0,0.08);
+        }
+
+        .flex-column h4 {
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+
+        .flex-column ul li {
+            margin-bottom: 12px;
+            list-style: none;
+            padding-left: 30px;
+            position: relative;
+            line-height: 1.6;
+        }
+
+        .flex-column ul li::before {
+            content: "\2713"; /* Checkmark symbol */
+            position: absolute;
+            left: 0;
+            color: var(--secondary-color);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        .problems-list li::before {
+            content: "\2717"; /* X symbol for problems */
+            color: #ff6347; /* Tomato red */
+        }
+
+        /* Benefits Section */
+        .benefit-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.05);
+            border: 1px solid #e6e0f2;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-10px) scale(1.03);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+        }
+
+        .benefit-card i {
+            font-size: 3.5rem;
+            color: var(--accent-color);
+            margin-bottom: 20px;
+            transition: color 0.3s ease;
+        }
+        
+        .benefit-card:hover i {
+            color: var(--secondary-color);
+        }
+
+        .benefit-card h5 {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var(--primary-color);
+        }
+
+        /* Packages Section */
+        #packages {
+            background: var(--dark-bg);
+            color: var(--light-text);
+            padding: 5rem 0;
+        }
+        
+        #packages .section-title, #packages h4 {
+            color: #fff;
+        }
+        
+        #packages .card {
+            background: #2b0053; /* Darker purple for cards */
+            color: var(--light-text);
+            border: 1px solid #4a00e5;
+            border-radius: 16px;
+            transition: transform 0.3s ease;
+        }
+        
+        #packages .card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+        }
+
+        #packages .card-title {
+            color: var(--accent-color);
+            font-size: 1.8rem;
+        }
+
+        #packages .card p { /* Fix for invisible text */
+            color: var(--light-text); 
+            opacity: 0.8;
+        }
+
+        #packages .card ul li {
+            list-style: none;
+            padding-left: 20px;
+            position: relative;
+            margin-bottom: 8px;
+        }
+
+        #packages .card ul li::before {
+            content: "\2713";
+            position: absolute;
+            left: 0;
+            color: #25D366; /* WhatsApp Green */
+        }
+
+        /* About & Testimonials */
+        .about-section {
+            background: linear-gradient(to bottom, #f5f0ff, #e0d3ff);
+            padding: 5rem 0;
+        }
+        
+        .testimonials-section {
+            background-color: #fff;
+            padding: 5rem 0;
+        }
+
+        .about-instructor {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .about-instructor img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--accent-color);
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .testimonial-card {
+            background: var(--light-bg);
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.05);
+            margin-bottom: 20px;
+            border-left: 5px solid var(--primary-color);
+        }
+
+        .testimonial-card p {
+            font-style: italic;
+        }
+        .testimonial-card .author {
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        /* FAQ Section */
+        #faq {
+            background: linear-gradient(to top, #f5f0ff, #e0d3ff);
+            padding: 5rem 0;
+        }
+
+        .accordion-button {
+            font-weight: 600;
+            color: var(--primary-color);
+            background-color: #f8f1ff;
+            border: 1px solid #e0d3ff;
+            border-radius: 10px !important;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            transition: background-color 0.3s ease;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background-color: var(--primary-color);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(106, 5, 173, 0.3);
+        }
+
+        .accordion-button:not(.collapsed)::after {
+            filter: brightness(0) invert(1);
+        }
+
+        .accordion-item {
+            border: none;
+            margin-bottom: 1.5rem;
+            border-radius: 10px;
+            background-color: transparent;
+        }
+
+        .accordion-body {
+            background-color: #fff;
+            border: 1px solid #e0d3ff;
+            border-top: none;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            padding: 2rem;
+            line-height: 1.6;
+        }
+
+        /* Contact Form */
+        #contact {
+            background: var(--light-bg);
+            padding: 5rem 0;
+        }
+        
+        #contact .form-control {
+            border-radius: 50px;
+            padding: 15px 25px;
+            border: 1px solid #ddd;
+            transition: border-color 0.3s ease;
+        }
+        
+        #contact .form-control:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 0.25rem rgba(106, 5, 173, 0.25);
+        }
+        
+        #contact textarea.form-control {
+            border-radius: 20px;
+        }
+        
+        .btn-submit {
+            background: linear-gradient(to right, var(--secondary-color), var(--primary-color));
+            color: #fff;
+            border: none;
+            border-radius: 50px;
+            font-weight: 700;
+            padding: 15px 50px;
+            transition: transform 0.3s ease;
+        }
+        
+        .btn-submit:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(74, 0, 229, 0.3);
+        }
+
+        /* Floating WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            z-index: 999;
+            background: #25D366;
+            color: #fff;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark-bg);
+            color: var(--light-text);
+            padding: 40px 0;
+            text-align: center;
+            border-top: 5px solid var(--accent-color);
+        }
+        
+        footer a {
+            color: #9277f1;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        footer a:hover {
+            color: #c9b7ff;
+            text-decoration: underline;
+        }
+        
+        /* === MOBILE RESPONSIVENESS === */
+        @media (max-width: 991px) {
+            .flex-section {
+                flex-direction: column;
+            }
+        }
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 2rem;
+                margin-bottom: 2rem;
+            }
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .hero p {
+                font-size: 1.2rem;
+            }
+            .benefit-card, .testimonial-card, .flex-column {
+                padding: 20px;
+            }
+            .about-instructor img {
+                width: 120px;
+                height: 120px;
+            }
+        }
+        @media (max-width: 575px) {
+            .hero {
+                padding: 120px 15px 80px;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            .section-title {
+                font-size: 1.8rem;
+            }
+            .btn {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+            .testimonials-section {
+                padding: 3rem 1rem;
+            }
+            .testimonial-card {
+                margin-bottom: 1.5rem;
+            }
+            #contact {
+                padding: 3rem 1rem;
+            }
+            #contact .form-control {
+                padding: 12px 20px;
+            }
+            .about-section {
+                padding: 3rem 1rem;
+                margin-bottom: 1rem;
+            }
+            .benefit-card {
+                margin-bottom: 1.5rem;
+            }
+        }
