@@ -700,29 +700,27 @@
         </div>
     </div>
 </section>
-
 <!-- CONTACT -->
 <section id="contact" class="container py-5" data-aos="fade-up">
     <h2 class="text-center section-title">Book Your Practical Session</h2>
-    <form class="mx-auto" style="max-width:600px;">
+    <form class="mx-auto" style="max-width:600px;" action="https://formspree.io/f/mandqkgd" method="POST">
         <div class="mb-3">
-            <input type="text" class="form-control" placeholder="Your Name" required>
+            <input type="text" name="name" class="form-control" placeholder="Your Name" required>
         </div>
         <div class="mb-3">
-            <input type="email" class="form-control" placeholder="Email Address" required>
+            <input type="email" name="email" class="form-control" placeholder="Email Address" required>
         </div>
         <div class="mb-3">
-            <input type="text" class="form-control" placeholder="Phone / WhatsApp">
+            <input type="text" name="phone" class="form-control" placeholder="Phone / WhatsApp">
         </div>
         <div class="mb-3">
-            <textarea class="form-control" rows="5" placeholder="Message / Requirements"></textarea>
+            <textarea name="message" class="form-control" rows="5" placeholder="Message / Requirements" required></textarea>
         </div>
         <div class="text-center">
             <button class="btn btn-submit w-100" type="submit">Submit Request</button>
         </div>
     </form>
 </section>
-
 <!-- WhatsApp -->
 <a href="https://wa.me/233500105058" class="whatsapp-float"><i class="bi bi-whatsapp"></i></a>
 
